@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">InfoJobsReplicaJetpackCompose</string>
+
+    <!--Bottom Bar-->
+    <string name="buscador">Buscador</string>
+    <string name="mis_ofertas">Mis Ofertas</string>
+    <string name="cv">Cv</string>
+    <string name="novedades">Novedades</string>
+
+    <!--Top Bar-->
+    <string name="mis_ofertas_top_app">Mis Ofertas</string>
+    <string name="novedades_top_app">Novedades</string>
+    <string name="cv_top_app">CV</string>
+
+
+    <!-- Buscador -->
+    <string name="buscador_text_1">Un día da para mucho</string>
+    <string name="buscador_text_2">¿Echamos un último</string>
+    <string name="buscador_text_3">vistazo a las ofertas?</string>
+
+
+</resources>
