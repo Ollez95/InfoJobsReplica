@@ -1,5 +1,6 @@
 package com.example.infojobsreplicajetpackcompose.features.buscador.view.composables
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Divider
 import androidx.compose.material.Text
@@ -14,8 +15,11 @@ import com.example.infojobsreplicajetpackcompose.ui.theme.Typography
 fun BuscadorTextLine(
     numberOfertas: Int
 ) {
+
     Column(
-        Modifier.fillMaxWidth()
+        Modifier
+            .fillMaxWidth()
+            .background(Color.White)
     ) {
         Text(
             text = "$numberOfertas Ofertas Recomendadas",

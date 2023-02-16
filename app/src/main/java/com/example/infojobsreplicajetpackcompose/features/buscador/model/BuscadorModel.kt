@@ -1,7 +1,8 @@
 package com.example.infojobsreplicajetpackcompose.features.buscador.model
 
 data class BuscadorModel(
-    val image: String,
+    val index: Int,
+    val image: Any,
     val position: String,
     val company:String,
     val date: String,

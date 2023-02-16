@@ -1,6 +1,8 @@
 package com.example.infojobsreplicajetpackcompose.composables
 
 import android.graphics.drawable.Icon
+import android.util.Log
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -57,7 +59,10 @@ fun IJReplicaBottomBarItem(
     textIcon: String
 ) {
     Column(
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.clickable {
+            Log.d("textIcon", textIcon)
+        }
     ) {
         Icon(imageVector = icon, contentDescription = textIcon)
         Text(text = textIcon)
