@@ -1,6 +1,5 @@
-package com.example.infojobsreplicajetpackcompose.features.buscador.view.composables
+package com.example.infojobsreplicajetpackcompose.composables
 
-import android.icu.text.ListFormatter.Width
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.size
@@ -10,7 +9,6 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
@@ -21,10 +19,9 @@ import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import coil.size.Size
 import com.example.infojobsreplicajetpackcompose.R
-import com.example.infojobsreplicajetpackcompose.ui.theme.Shapes
 
 @Composable
-fun BuscadorImageState(
+fun IJImageState(
     pathImageUrl: Any,
     size: Dp
 ) {
@@ -45,7 +42,7 @@ fun BuscadorImageState(
         }
     }
     else{
-        ImageItem(
+        IJImageItem(
             painter = painter,
             size = size
         )
@@ -53,9 +50,9 @@ fun BuscadorImageState(
 }
 
 @Composable
-fun ImageItem(modifier: Modifier = Modifier,
-              painter: AsyncImagePainter,
-              size: Dp = 40.dp
+fun IJImageItem(modifier: Modifier = Modifier,
+                painter: AsyncImagePainter,
+                size: Dp = 40.dp
 ) {
     Image(
         painter = painter,
@@ -71,7 +68,7 @@ fun ImageItem(modifier: Modifier = Modifier,
 @Preview
 @Composable
 fun BuscadorImageStatePreview() {
-    BuscadorImageState(
+    IJImageState(
         pathImageUrl = R.drawable.management_solutions,
         size = 90.dp
     )

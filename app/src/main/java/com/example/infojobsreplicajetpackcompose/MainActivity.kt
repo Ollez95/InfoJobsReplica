@@ -16,6 +16,8 @@ import com.example.infojobsreplicajetpackcompose.ui.theme.InfoJobsReplicaJetpack
 import kotlinx.coroutines.runBlocking
 
 import androidx.compose.runtime.*
+import com.example.infojobsreplicajetpackcompose.features.mis_ofertas.view.composables.NoGuardadasView
+import com.example.infojobsreplicajetpackcompose.utils.rememberWindowInfo
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -23,28 +25,24 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+
+            val window = rememberWindowInfo()
+
             InfoJobsReplicaJetpackComposeTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+
+                    NoGuardadasView(
+                        image = R.drawable.management_solutions,
+                        windowInfo = window
+                    )
+
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    InfoJobsReplicaJetpackComposeTheme {
-        Greeting("Android")
-    }
-}

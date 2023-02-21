@@ -24,7 +24,6 @@ import com.example.infojobsreplicajetpackcompose.features.buscador.model.Buscado
 import com.example.infojobsreplicajetpackcompose.features.buscador.view.composables.BuscadorBox
 import com.example.infojobsreplicajetpackcompose.features.buscador.view.composables.BuscadorItem
 import com.example.infojobsreplicajetpackcompose.features.buscador.view.composables.BuscadorTextLine
-import com.example.infojobsreplicajetpackcompose.features.buscador.view.composables.BuscadorUpPart
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable

@@ -9,5 +9,6 @@ data class BuscadorModel(
     val city: String,
     val typeWork: String,
     val salary: String,
-    val typeOfProcess: String
+    val typeOfProcess: String,
+    val inProcess: Boolean = false
 )
